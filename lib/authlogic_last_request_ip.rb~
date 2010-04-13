@@ -1,0 +1,9 @@
+#require "authlogic_last_request_ip/acts_as_authentic"
+require "authlogic_last_request_ip/session"
+#require "authlogic_last_request_ip/helper"
+
+if ActiveRecord::Base.respond_to?(:add_acts_as_authentic_module)
+	# ActiveRecord::Base.send(:include, AuthlogicFacebookConnect::ActsAsAuthentic)
+  Authlogic::Session::Base.send(:include, AuthlogicLatRequestIp::Session)
+  #ActionController::Base.helper AuthlogicFacebookConnect::Helper
+end

@@ -1,0 +1,1 @@
+require 'authlogic_last_request_ip'
