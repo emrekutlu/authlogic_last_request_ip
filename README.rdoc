@@ -1,0 +1,1 @@
+Adds a new magic column called "last_request_ip". Works like the default magic columns of Authlogic.
